@@ -11,8 +11,9 @@ describe('test dev', function() {
         browser.element("#propertiesMenuItem").click();
         browser.element('=Add a location').click();
         browser.element("#id_name").waitForVisible();
-	browser.element("#id_name").setValue("Location123");
-        browser.element("#id_description").setValue("Location123 is consist of 22 sensors);
+        browser.element("#id_name").setValue("Location123");
+        browser.element("#id_description").setValue("Location123 is consist of 22 sensors");
+        browser.element('.ladda-button').click();
     });
 
 });
